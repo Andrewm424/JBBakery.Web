@@ -1,0 +1,345 @@
+/* ===================== */
+/* PREMIUM TYPOGRAPHY */
+/* ===================== */
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.7;
+    background-color: #ffffff;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.5px;
+}
+
+/* ===================== */
+/* NAVBAR (Modern White) */
+/* ===================== */
+
+.navbar {
+    padding: 12px 0;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.navbar-brand img {
+    height: 60px;
+}
+
+/* NAV LINKS */
+.nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    margin-left: 30px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+    .nav-link:hover {
+        color: #b11226 !important;
+    }
+
+    /* ACTIVE LINK */
+    .nav-link.active-nav {
+        color: #b11226 !important;
+        font-weight: 600;
+    }
+
+    /* UNDERLINE ANIMATION */
+    .nav-link::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 0%;
+        height: 3px;
+        background-color: #b11226;
+        transition: width 0.3s ease;
+        border-radius: 2px;
+    }
+
+    .nav-link.active-nav::after {
+        width: 100%;
+    }
+
+/* ===================== */
+/* HERO SECTION */
+/* ===================== */
+
+.hero-section {
+    background: url('/images/hero.jpg') center/cover no-repeat;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.hero-overlay {
+    background-color: rgba(177, 18, 38, 0.65);
+    padding: 60px;
+    border-radius: 10px;
+}
+
+    .hero-overlay h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+/* ===================== */
+/* BUTTONS */
+/* ===================== */
+
+.btn-red {
+    background-color: #b11226;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+}
+
+    .btn-red:hover {
+        background-color: #8f0f1f;
+        transform: translateY(-2px);
+    }
+
+/* ===================== */
+/* CARDS */
+/* ===================== */
+
+.card-modern {
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+    transition: all 0.4s ease;
+}
+
+    .card-modern:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    }
+
+.card-body {
+    padding: 30px;
+}
+
+/* ===================== */
+/* MENU SECTION */
+/* ===================== */
+
+.menu-section {
+    background-color: #f9f9f9;
+}
+
+.pricing-list li {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.pricing-list strong {
+    color: #b11226;
+}
+
+/* ===================== */
+/* CONTACT PAGE */
+/* ===================== */
+
+.contact-strip {
+    background-color: #f4f4f4;
+}
+
+.map-section {
+    background-color: #fafafa;
+}
+
+.map-wrapper iframe {
+    border-radius: 16px;
+}
+
+.hours-card {
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    background-color: white;
+}
+
+.cta-section {
+    background-color: #b11226;
+    color: white;
+}
+
+    .cta-section .btn-red {
+        background-color: white;
+        color: #b11226;
+    }
+
+.btn-outline-red {
+    border: 2px solid #b11226;
+    color: #b11226;
+    padding: 8px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+    .btn-outline-red:hover {
+        background-color: #b11226;
+        color: white;
+    }
+
+/* ===================== */
+/* FLOATING WHATSAPP */
+/* ===================== */
+
+.floating-whatsapp {
+    position: fixed;
+    bottom: 22px;
+    right: 22px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+    .floating-whatsapp:hover {
+        transform: scale(1.12);
+        box-shadow: 0 10px 28px rgba(0,0,0,0.35);
+    }
+
+    .floating-whatsapp:hover {
+        transform: scale(1.1);
+    }
+
+/* ===================== */
+/* MOBILE RESPONSIVENESS */
+/* ===================== */
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        padding: 80px 15px;
+    }
+
+    .hero-overlay {
+        padding: 30px;
+    }
+
+        .hero-overlay h1 {
+            font-size: 2rem;
+        }
+
+        .hero-overlay p {
+            font-size: 1rem;
+        }
+
+    .navbar-brand img {
+        height: 50px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+    .btn-red {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .floating-whatsapp {
+        bottom: 15px;
+        right: 15px;
+        padding: 18px 22px;
+        font-size: 22px;
+    }
+
+    footer {
+        padding: 20px 10px;
+    }
+
+    /* ===================== */
+    /* NAVBAR ANIMATIONS */
+    /* ===================== */
+
+    /* Navbar smooth shadow transition */
+    .navbar {
+        transition: all 0.4s ease;
+    }
+
+        /* Shrink effect class (added via JS) */
+        .navbar.scrolled {
+            padding: 6px 0;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+        }
+
+    /* Nav links */
+    .nav-link {
+        color: #333 !important;
+        font-weight: 500;
+        margin-left: 30px;
+        position: relative;
+        transition: all 0.3s ease;
+    }
+
+        /* Hover lift */
+        .nav-link:hover {
+            color: #b11226 !important;
+            transform: translateY(-2px);
+        }
+
+        /* ACTIVE LINK */
+        .nav-link.active-nav {
+            color: #b11226 !important;
+            font-weight: 600;
+        }
+
+        /* Animated underline */
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -6px;
+            width: 0%;
+            height: 3px;
+            background-color: #b11226;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        /* Hover underline grows from center */
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        /* Active underline always visible */
+        .nav-link.active-nav::after {
+            width: 100%;
+        }
+
+    /* Smooth navbar animation */
+    .navbar {
+        transition: all 0.4s ease;
+    }
+
+        /* When scrolled */
+        .navbar.scrolled {
+            padding-top: 6px;
+            padding-bottom: 6px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            background-color: white;
+        }
+}
